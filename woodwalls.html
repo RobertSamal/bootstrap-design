@@ -6,22 +6,45 @@ active: true
 
 <div class="container">
     <!-- Page Header -->
-    <section class="header-section text-center">
-        <h1>Wood Walls Projects</h1>
-        <p class="lead">Explore our unique wood-cladding solutions for commercial and residential spaces.</p>
+    <section class="header-section text-center mb-4">
+        <h1>Wood Walls</h1>
+        <p class="lead">Bootstrap loves creating spaces with the warm, natural feeling that only wooden walls can provide.</p>
     </section>
 
-    <!-- Project Image Section -->
+    <!-- Project Images Section -->
     <section class="image-section text-center my-4">
-        <img src="https://bootstrapdesign.ca/assets/img-project/parkmed5.jpg" alt="Wood Walls Project" class="img-responsive img-thumbnail" style="max-width: 80%; height: auto;">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="image-wrapper">
+                    <img src="/assets/img-project/Wood Walls 4.jpg" alt="Wood Wall Project 1" class="img-thumbnail">
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="image-wrapper">
+                    <img src="/assets/img-project/wood walls 2.jpg" alt="Wood Wall Project 2" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="image-wrapper">
+                    <img src="/assets/img-project/Wood Walls 3.jpg" alt="Wood Wall Project 3" class="img-thumbnail">
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="image-wrapper">
+                    <img src="/assets/img-project/Wood Walls 1.jpg" alt="Wood Wall Project 4" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Form Section -->
     <section class="contact-section mt-5">
-        <h2>Contact Us</h2>
-        <p>We’d love to discuss your project ideas! Send us a message and we’ll get in touch soon.</p>
+        <h2 class="text-center mb-3">Contact Us</h2>
+        <p class="text-center mb-4 larger-text">Whether paneling or solid wood, contact us regarding your wood surface project for a quick estimate:</p>
 
-        <form action="mailto:rob@bootstrapdesign.ca" method="post" enctype="text/plain">
+        <form action="mailto:info@bootstrapdesign.ca" method="post" enctype="text/plain">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" class="form-control" required>
@@ -33,11 +56,56 @@ active: true
             </div>
 
             <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                <label for="phone">Phone: (optional)</label>
+                <input type="tel" id="phone" name="phone" class="form-control">
             </div>
 
-            <button type="submit" class="btn btn-primary">Send</button>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" class="form-control" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send</button>
         </form>
+
+        <p class="text-center mt-3 larger-text">Or reach out directly at <a href="mailto:info@bootstrapdesign.ca">info@bootstrapdesign.ca</a></p>
     </section>
 </div>
+
+<style>
+    /* Set images to portrait orientation with uniform size */
+    .image-wrapper {
+        height: 450px; /* Adjusted height for a portrait effect */
+        width: 100%; /* Ensure full width for responsiveness */
+        overflow: hidden;
+    }
+    .image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Crops the image to fill the container while keeping aspect ratio */
+    }
+
+    /* Contact form spacing and layout */
+    .contact-section .form-group {
+        margin-bottom: 20px; /* More space between form elements */
+    }
+
+    .contact-section .btn-block {
+        width: 100%; /* Full-width button */
+        padding: 12px; /* Adequate padding for easy clicking */
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+        color: #555;
+    }
+
+    /* Increase font size for specific text */
+    .larger-text {
+        font-size: 1.25rem;
+        font-weight: 600; /* Slightly bolder text */
+        color: #333; /* Darker color for emphasis */
+    }
+
+    
+</style>

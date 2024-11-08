@@ -166,6 +166,7 @@
 
 
 
+
 @media only screen and (max-width: 768px) {
 	
 	.navbar-default ul.navbar-nav{
@@ -210,4 +211,10 @@
     border: none;
     color: #fff;
     padding: 10px 20px;
+}
+
+/* Hide the Toronto's Creative Contractor heading and subheading only on the Wood Walls page */
+body.page-wood-walls .navbar .grid .item h1,
+body.page-wood-walls .navbar .grid .item h2 {
+    display: none !important;
 }
