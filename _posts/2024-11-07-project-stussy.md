@@ -9,7 +9,7 @@ postPage: false
 tags: 
 
 images: 
-- img-project/stussy 1.JPEG
+- img-project/stussy 1.jpg
 - img-project/stussy 2.JPEG
 
 
