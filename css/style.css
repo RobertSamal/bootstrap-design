@@ -166,6 +166,7 @@
 
 
 
+
 @media only screen and (max-width: 768px) {
 	
 	.navbar-default ul.navbar-nav{
@@ -188,4 +189,32 @@
 		line-height: 12px;
 		width: 100%;
 	}
+}
+.header-section {
+    margin-top: 30px;
+}
+
+.image-section {
+    margin: 20px 0;
+}
+
+.contact-section {
+    margin-top: 40px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #5a9;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* Hide the Toronto's Creative Contractor heading and subheading only on the Wood Walls page */
+body.page-wood-walls .navbar .grid .item h1,
+body.page-wood-walls .navbar .grid .item h2 {
+    display: none !important;
 }
